@@ -19,7 +19,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CatFactsActivity::class.java)
             startActivity(intent)
         }
-
+        binding.button2.setOnClickListener{
+            val intent = Intent(this, ContactMyServerActivity::class.java)
+            startActivity(intent)
+        }
 
     }
+
+
 }
