@@ -14,6 +14,9 @@ interface ApiRequests {
     @GET("/facts/random")
     fun getCatFacts(): Call<RandomCatFacts>
 
+    /**
+     * 아래 부터는 MyServer 에서 사용
+     */
     @POST("/join/insert")
     fun insertUserData(): Call<RandomCatFacts>
 }

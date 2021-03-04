@@ -72,10 +72,21 @@ class ContactMyServerActivity : AppCompatActivity() {
     }
 
 
-
     companion object {
         /*** 상수 데이터 */
         const val MY_SERVER_URL = "http://192.168.0.35:3000"
         const val TAG = "ContactMyServerActivity"
+        /*
+        http://192.168.0.35:3000
+        http url 요청 예시
+        http://192.168.0.35:3000/process/listuser
+        공통 : http://192.168.0.35:3000
+        path : /process/listuser
+
+        Nodejs 서버에서
+        라우터 -> 미들웨어 처리 후
+        Callback
+
+         */
     }
 }
