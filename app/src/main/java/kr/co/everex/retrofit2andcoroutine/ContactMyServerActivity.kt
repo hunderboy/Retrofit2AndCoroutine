@@ -32,6 +32,40 @@ class ContactMyServerActivity : AppCompatActivity() {
             getCurrentData()
         }
 
+
+
+//    binding.button.setOnClickListener {
+//        // Todo 데이터 서버로 전송
+//        val params:HashMap<String, Any> = HashMap()
+//        params["name"] = "이성훈"
+//        params["user_id"] = "아이디"
+//        params["password"] = "123456qwer!@Q"
+//
+//        params["gender"] = "남"
+//        params["age"] = "29"
+//        params["weight"] = "70"
+//        params["height"] = "183"
+//        params["type"] = "A-1"
+//
+//        params["kneeCondition"] = "데이터 넣을 예정"
+//        params["memberHealth"] = "데이터 넣을 예정"
+//
+//
+//        server?.testRequest2(params)?.enqueue(object : Callback<ResponseDTO> {
+//            // 실패
+//            override fun onFailure(call: Call<ResponseDTO>?, t: Throwable?) {
+//                Log.e("Retrofit 실패", t.toString())
+//            }
+//            // 성공
+//            override fun onResponse(call: Call<ResponseDTO>?, response: Response<ResponseDTO>?) {
+//                Log.e("Retrofit 성공", response?.body().toString())
+//
+////                    val res: ResponseDTO? = response?.body()
+////                    Log.e("Retrofit 성공", res?.result)
+//            }
+//        })
+//    }
+
     }
 
     private fun getCurrentData() {
